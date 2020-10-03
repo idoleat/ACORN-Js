@@ -66,7 +66,7 @@ ACORN.prototype.random = function(seed, length) {
     Y2.shift(); // remove the first element, which is seed, to fit the length.
     //Y2.forEach( (element, index) => { this[index] = element/this.M } , Y2);
     for(let i=0; i<length; i++){
-        Y2[i] = Y2[i]/this;
+        Y2[i] = Y2[i]/this.M;
     }
     return Y2;
 }

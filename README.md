@@ -4,7 +4,7 @@ A JavaScript implementation of ACORN, a k-th orderAdditive Congruential Random N
 It's only a nodejs module now. More ToDos below.
 
 # ToDo
-* A script version for browsers
+* A script version for browsers.
 * Upload to a CDN for easy include in browsers.
 * Make it to npm.
 * Unit test for eaier futher development.
