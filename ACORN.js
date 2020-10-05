@@ -48,9 +48,10 @@ ACORN.prototype.IsInputValid = function(seed, length) {
 }
 
 /**
- * Modify precision and order. Default ones are 1 and 10000.
- * @param  {[type]} precision_multiplier Multipler to multiply the M value, which is 2^30 by default.
- * @param  {[type]} order                Order.
+ * Modify precision, order and option to auto correct seed.
+ * @param  {integer} precision_multiplier Multipler to multiply the M value, which is 2^30 by default. Default value is 1.
+ * @param  {integer} order                Order. Default is 10000.
+ * @param  {boolean} auto_correct_seed    An option to auto correct even seed. Default is true.
  */
 ACORN.prototype.setProperty = function(precision_multiplier, order, auto_correct_seed) {
     this.precision_multiplier = precision_multiplier;
