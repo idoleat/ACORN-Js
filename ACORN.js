@@ -93,9 +93,8 @@ ACORN.prototype.random = function(seed, length) {
 	}
 
 	for (let i = 0; i < this.K; i++) {
-		Y2 = [];
-		Y2.push(this.seed); // [flag] Questionable
-		if(this.initial_value != undefined) Y2[0] += this.initial_value[i];
+		Y2[0] = this.initial_value === undefined ? this.seed : this.initial_value[i];
+		// if(this.initial_value != undefined) Y2[0] += this.initial_value[i];
 		for (let j = 1; j < this.N; j++) {
 			Y2[j] = (Y1[j] + Y2[j - 1]) % this.M; // could use if as the alternative of mod
 			Y1[j] = Y2[j];
