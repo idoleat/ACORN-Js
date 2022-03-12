@@ -1,11 +1,11 @@
 # ACORN-Js
-A JavaScript implementation of ACORN, a k-th orderAdditive Congruential Random Number (ACORN) generator. More details at http://acorn.wikramaratna.org/concept.html
+A JavaScript implementation of ACORN, a k-th order Additive Congruential Random Number (ACORN) generator. More details at http://acorn.wikramaratna.org/concept.html
 
 It's only a nodejs module now. More ToDos below.
 
 ## Usage
 ### `ACORN.prototype.random = function(seed, length)`
-Generate an array from seed with specified length filled with number in [0,1). To avoid small first element, recommand to use the seed greater than 10^5.
+Generate an array from seed with specified length filled with number in [0,1). To avoid small first element, I recommand to use the seed greater than 10^5.
 * `seed`: Seed for generator. Becareful that using the seed greater than Number.MAX_SAFE_INT will make the seed become zero. BigInt not supported yet.
 * `length`: Length of the returned array.
 * Returns an array of generated numbers.
